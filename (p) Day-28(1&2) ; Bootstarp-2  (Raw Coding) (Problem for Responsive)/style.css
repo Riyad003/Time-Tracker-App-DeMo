@@ -1,0 +1,745 @@
+/* Default CSS */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body,h1,h2,h3,h4,h5,h6,a,p,span{
+    font-family: 'Work Sans', sans-serif;
+}
+.container{
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    max-width: 1320px;
+    margin: auto;
+}
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Header Section Start */
+header{
+   
+   padding: 10px 0;
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: 99;
+   width: 100%;
+   background-color: #fff;
+   border-bottom: 1px solid #000;
+}
+.header-logo{
+    width: 30%;
+   
+}
+.logo img {
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+}
+.logo span{
+   margin-top: 10px;
+   display: inline-block;
+   font-weight: 500;
+   font-size: 26px;
+   line-height: 38px;
+   color: black;
+   transition: .5s;
+}
+.logo span:hover{
+    color:#cccccc ;
+}
+.header-menu{
+    width: 56%;
+}
+.primary-menu ul li {
+    display: inline-block;
+}
+.primary-menu ul li a{
+    display: block;
+    color: black;
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    transition: .6s;
+}
+.primary-menu ul li a:hover{
+    color: tomato;
+}
+.header-button{
+    width: 14%;
+    margin-top: 14px;
+}
+.header-btn{
+    border: 2px solid rgb(98, 120, 223);
+    padding:10px 30px ;
+    font-size: 16px;
+    line-height: 22.4px;
+    text-align: center;
+    color: #6278df;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: .6s;
+    box-sizing: border-box;
+}
+.header-btn:hover{
+    background-color:#6278df;
+    color: white;
+    box-shadow: 0 0 20px #6278df;
+}
+/* Drop Down Menu */
+.primary-menu ul li{
+    position: relative;
+}
+.primary-menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+.primary-menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 300px;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    transform: scaleY(0);
+    transform-origin: top center;
+  
+}
+.primary-menu ul li ul li{
+    display: inline-block;
+    border-bottom: 1px solid #ddd;
+  
+}
+.primary-menu ul li ul li a{
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+/* Header Section End */
+
+/* Main Section Start */
+
+/* Banner Section Strat */
+.banner{
+    padding: 220px 0;
+    background: url(https://mobirise.com/extensions/appamp/assets/images/mbr-4.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    margin-top: 70px;
+}
+.banner::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0,.4);
+  z-index: -1;
+}
+.banner-content h1{
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 63px;
+    padding: 32px 0;
+    color: snow;
+}
+.banner-content p{
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 38px;
+    color: snow;
+}
+.banner-btn{
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 31px;
+    color: #7d7d7d;
+    transition: .5s;
+    padding:18px 30px ;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-left:15px ;
+    display: inline-block;
+    margin-top: 25px;
+    
+}
+.banner-btn:hover{
+    background-color: slateblue;
+    color: #fff;
+}
+
+
+/* Banner Section End */
+
+/* Video Section Satrt */
+.video{
+    background-color:#F7F9FF ;
+    padding: 100px 0;
+}
+.v-left{
+    width: 50%;
+   
+}
+.v-right{
+    width: 45%;
+  
+}
+.v-right h3{
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 63px;
+    padding-bottom: 35px;
+}
+.v-right p{
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 31px;
+    color: #767676;
+}
+/* Video Section End */
+
+/* Service Section Start */
+.services{
+    background-color: #fff;
+    padding: 100px 0;
+}
+.service-title h2{
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 63px;
+    color: black;
+    margin-bottom: 20px;
+}
+.service-title p{
+    font-weight: 300;
+    font-size: 26px;
+    color: #767676;
+    margin-bottom: 65px;
+    margin-top: 30px;
+}
+.service-box{
+    width: 31.33%;
+    background-color: #fff;
+    box-shadow: 0 0 35px rgba(98, 120, 223,.15);
+    margin-right: 2%;
+    box-sizing: border-box;
+    padding: 40px;
+    margin-bottom: 2%;
+    transition: .5s;
+}
+.service-box:nth-child(3n+3){
+    margin-right: 0;
+}
+.service-box:hover{
+    box-shadow: 0 0 35px rgba(98, 120, 223,.45);
+}
+.s-icon span{
+    font-size: 48px;
+    float: left;
+    color:#6278df ;
+    min-height: 180px;
+    margin-right: 20px;
+    width: 60px;
+}
+.s-content h3{
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 38px;
+  margin-bottom: 15px;
+}
+.s-content p{
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 31px;
+    color: #767676;
+}
+/* Service Section End */
+
+/* Pricing tables Section Start */
+.pricing-tables{
+    padding: 100px 0;
+    background-color: #F7F9FF;
+}
+.p-title{
+    margin-bottom: 70px;
+}
+.p-title h2{
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 63px;
+}
+.p-title p{
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 38px;
+    color: #767676;
+}
+.p-item:nth-child(3) {
+   margin-right: 0;
+}
+.p-box{
+    width: 31.33%;
+    margin-right: 2%;
+    background-color: #fff;
+    box-shadow: 0 0 35px rgba(98, 120, 223,.25);
+    box-sizing: border-box;
+   
+}
+.p-box:hover .p-heading{
+    background-color: #5d74d6;
+    color: #fff;
+}
+.p-box:hover .p-btn a{
+    background-color: #6279df;
+    color: #fff;
+}
+.p-heading{
+    border-bottom: 1px solid #ddd;
+    padding: 40px;
+    transition: .6s;
+}
+.p-heading .tinny{
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 31px;
+}
+.p-heading h3{
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 38px;
+    margin-bottom: 30px;
+}
+.p-heading h1{
+    font-weight: 700;
+    font-size: 58px;
+   
+    margin-bottom: 30px;
+}
+.p-heading h5{
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    margin-bottom: 20px;
+}
+.p-heading p{
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 31px;
+}
+.p-content{
+    padding: 40px;
+}
+.p-content ul li span {
+    display: inline-block;
+  font-size: 30px;
+  width: 50px;
+  color: #6278df;
+  font-weight: 600;
+  /* Here the Font Weight Property Isn't working. Seek other help to fix it and make it simple */
+}
+.p-content li{
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 31px;
+    color: #767676;
+    margin-bottom: 25px;
+}
+.p-content ul:first-child li{
+    margin-top: 25px;
+}
+
+.p-btn a{
+ font-weight: 600;
+ font-size: 21px;
+ line-height: 31px;
+ color: #6278df;
+ background-color: #fff;
+ display: inline-block;
+ transition: .6s;
+ padding: 15px 75px;
+ border-radius: 5px;
+ margin-bottom: 60px ;
+ box-shadow: 0 0 35px rgba(98, 120, 223,.25);
+}
+.p-btn a:hover{
+    background-color: black;
+    color:#fff ;
+}
+
+/* Pricing tables Section End */
+
+/* Team Section Start  */
+.team{
+    padding: 100px 0;
+}
+.team-title{
+    margin-bottom: 75px;
+   
+}
+.team-title h2{
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 63px;
+}
+
+.members img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 100%;
+}
+.members{
+    width: 23%;
+    margin-left: 2%;
+    box-shadow: 0 0 35px rgba(98, 120, 223,.25);
+   
+}
+.member-bio{
+    padding: 30px;
+}
+.member-bio h4{
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 38px;
+
+}
+.member-bio p{
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 31px;
+    color: #767676;
+}
+/* Team Section End */
+
+/* Newsletter Section Satrt  */
+.newsletter{
+    padding: 100px 0;
+    background-color: #F7F9FF;
+}
+.n-titile{
+    margin-bottom: 60px;
+}
+.n-titile p{
+    margin-bottom: 32px;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 38px;
+    color: #767676;
+}
+.n-titile h3{
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 63px;
+
+}
+.n-input{
+    width: 350px;
+    padding: 20px 20px;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 21px;
+    color: #232323;
+    border: 1px solid #e4e4e4;
+    border-radius: 6px;
+    margin-right: 10px;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+   
+
+}
+
+.n-input:focus{
+    /* This border isn't working here.I can't find the problem why it isn't working.Seek help from others. 
+    Define Why? */
+    border: 1px solid #6278df;
+    box-shadow: 2px 2px 25px rgba(98, 120, 223,.9);  
+    
+}
+
+.default-btn{
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 31px;
+    background-color: #6278df;
+    color: #fff;
+    border: 2px solid transparent;
+    transition: .5s;
+    padding: 15px 90px;
+    border-radius: 6px;
+    display: inline-block;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+}
+.default-btn:hover{
+    background-color: #fff;
+    color: #6278df;
+    border: 2px solid #6278df;
+    box-shadow: 0 0 25px rgba(98, 120, 223,.9)
+}
+/* Newsletter Section End */
+
+/* Blog Section Start */
+.blog{
+    padding: 100px 0;
+}
+
+.btitle-left{
+    width: 50%;
+}
+.btitle-left h2{
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 63px;
+
+}
+.btitle-right{
+    width: 48%;
+    margin-bottom: 65px;
+}
+.btitle-right p{
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 31px;
+    color: #767676;
+}
+
+.b-left {
+    width: 48%;
+}
+.b-left {
+    box-shadow: 0 0 25px rgba(98, 120, 223,.12)
+}
+.bimg-content{
+    padding: 10px;
+}
+.bimg-content h3{
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    margin-top: 25px;
+    margin-bottom: 13px;
+}
+.bimg-content p{
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 31px;
+    color:#767676 ;
+}
+.b-right{
+    width: 48%;
+}
+.b-right img{
+    width: 100%;
+}
+.b-left img{
+    width: 100%;
+    float: left;
+    width: 320px;
+    height: 220px;
+    margin-right: 30px;
+    border-radius: 6px 0 0 6px;
+}
+/* Blog Section End */
+
+/* Testimonial Section Start */
+.testimonial{
+    padding: 100px 0;
+    background-color: #F7F9FF;
+}
+.t-title{
+    margin-bottom: 77px;
+}
+.t-title p{
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 38px;
+    color: #767676;
+    margin-bottom: 25px;
+}
+.t-title h2{
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 63px;
+}
+.t-item{
+    width: 31%;
+    margin-right: 2%;
+}
+.t-content{
+    padding:65px 45px;
+    background-color: #fff;
+    transition: .5s;
+    box-shadow:  0 0 25px rgba(98, 120, 223,.22);
+    position: relative;
+}
+.t-content::after {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 20px 0 20px;
+        border-color: #ffffff transparent transparent transparent;
+    }
+
+.t-content:hover{
+    box-shadow:  0 0 25px rgba(98, 120, 223,.33);
+}
+.t-content p{
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 31px;
+    color: #767676;
+    text-align: center;
+    position: relative; 
+}
+.t-content p::before{
+   /* ##########Here The Font Awesome 6 Icon isn't working when I used it in pseudo selector. Need some Research ########## */
+
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+   
+    font-family:"Font Awesome 5 Free";
+    font-weight: 900; 
+    content: "\f007";
+}
+.t-img{
+ 
+ width:201px;
+ margin: 40px auto;
+}
+.t-img img{
+    float: left;
+    border-radius: 50%;
+    width: 80px;
+    margin-right: 12px;
+}
+.user-bio{
+    margin: 20px 10px;
+}
+.user-bio h4{
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    margin-bottom: 4px;
+    display: block;
+}
+.user-bio span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #767676;
+    display: block;
+}
+/* Testimonial Section End */
+
+/* Contact  Section Start */
+.contact{
+    padding: 100px 0;
+
+}
+.contact-section-map{
+    width: 48%;
+}
+.contact-section-form{
+    width: 48%;
+   
+}
+.contact-section-form .w100{
+    width: 100%;
+}
+.contact-section-form .w50{
+    width: 48%;
+    text-align: left;
+}
+.contact-section-form h3{
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 38px;
+    margin-bottom: 25px;
+}
+.contact-section-form p{
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 31px;
+    color: #767676;
+    margin-bottom: 40px;
+}
+.contact-section-form .common{
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 21px;
+    color: #767676;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow:  0 0 25px rgba(98, 120, 223,.22);
+    border: 1px solid #e4e4e4;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+.contact-section-form .diff{
+    
+    margin-right: -160px;
+}
+.contact-section-form .common:focus{
+    /* ###### The focus Effect isn't Working well. Need some research  ###### */
+ border: 1px solid rgb(98, 120, 223);
+
+ box-shadow:  0 0 25px rgba(98, 120, 223,.72); 
+}
+.c-btn{
+    width: 100%;
+}
+/* Contact  Section End */
+
+/* Main Section End */
+
+/* Footer Seection Start */
+.footer{
+    margin-top: 90px;
+}
+.footer p{
+font-weight: 400;
+font-size: 21px;
+line-height: 31px;
+margin-bottom: 8px;
+}
+/* Footer Seection End */
