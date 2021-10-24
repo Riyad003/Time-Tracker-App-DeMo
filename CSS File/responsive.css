@@ -1,0 +1,65 @@
+/* #######  Problem to create responsive. I can't fix the problem ####### */
+@media all and(max-width:1400px){
+  header{
+      
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+@media all and(max-width:1030px){
+    .primary-menu ul li a {
+        padding: 10px 12px;
+    }
+    .header-button {
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        top: 0;
+    }
+    .left {
+        float: inherit;
+    }
+    .header-logo {
+        width: 100%;
+    }
+    .v-right h3 {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 52px;
+        padding-bottom: 21px;
+    }
+}
+@media all and(max-width:930px){
+    .banner {
+        padding: 120px 0;
+    }
+    .v-left {
+        width: 100%;
+    }
+}
+@media all and(max-width:870px){
+    .banner-content h1 {
+        font-weight: 600;
+        font-size: 52px;
+        
+        padding: 11px 0;
+    }
+    .banner-content h1 {
+        font-weight: 600;
+        font-size: 51px;
+        line-height: 63px;
+        padding: 16px 0;
+        color: snow;
+    }
+    .banner-btn {
+        font-weight: 600;
+        font-size: 21px;
+      
+        padding: 13px 22px;
+     
+
+        margin-top: 12px;
+    }
+   
+
+}
